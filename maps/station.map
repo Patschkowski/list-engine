@@ -1,0 +1,41 @@
+"Station" 32 16
+images {
+  image ground.bmp 0 0 bg_grass
+  image ground.bmp 1 0 bg_brown
+  image ground.bmp 2 0 bg_stone
+  image ground.bmp 3 0 bg_water
+  image ground.bmp 4 0 bg_quay_wall
+  image objects.bmp 0 0 grass
+  image objects.bmp 3 0 flower
+  image objects.bmp 1 0 corn
+  image objects.bmp 2 0 fence
+  image object_tree.bmp 0 0 tree_u
+  image object_tree.bmp 0 1 tree_l
+  image track.bmp 0 0 track
+}
+background {
+  region track 0 0 32 16 0
+  region bg_stone 6 5 20 6 0
+  region bg_brown 26 5 6 6 1
+  region bg_brown 0 5 6 6 1
+  region bg_grass 0 6 5 4 1
+  region bg_grass 27 6 5 4 1
+  region bg_water 1 12 30 3 1
+  region bg_water 1 1 30 3 1
+  region fence 6 5 1 6 1
+  region fence 25 5 1 6 1
+  region tree_l 28 8 4 1 1
+  region tree_l 0 8 4 1 1
+  region fence 7 5 9 1 1
+  region fence 17 5 8 1 1
+  region fence 7 10 9 1 1
+  region fence 17 10 8 1 1
+}
+foreground {
+  region tree_u 28 7 4 1
+  region tree_u 0 7 4 1
+}
+gates {
+  gate 16 5 hafen_list.map 35 9
+  gate 16 10 hafen_list.map 34 47
+}

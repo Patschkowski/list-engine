@@ -1,0 +1,162 @@
+bots {
+  fische {
+    position example.map 20 22
+    text 0
+    condition :none: {
+      changeState fische 2
+    }
+  }
+  fischer {
+    position example.map 15 16
+    text 0
+    image player3.bmp
+    route ddwuuw
+    condition fische {
+      changeText fischer 1
+    }
+  }
+  easterEgg1 {
+    position example.map 12 14
+    text 1
+    image easterEgg1.bmp
+    condition :none: {
+      changeText fischer 2
+    }
+    route w
+  }
+  trainFrontU {
+    position station.map 2 4
+    text 6
+    image train_r.bmp
+    route rrrrrrrrrrrrrrrwwwwwwwwrrrrrrrrrrrrrruuuulllllllllllllllllllllllllllllllddddrr
+    condition :none: {
+      changeText trainFrontU 6
+    }
+  }
+  trainMiddleU {
+    position station.map 1 4
+    text 6
+    image train_m.bmp
+    route rrrrrrrrrrrrrrrwwwwwwwwrrrrrrrrrrrrrrruuuulllllllllllllllllllllllllllllllddddr
+    condition :none: {
+      changeText trainMiddleU 6
+    }
+  }
+  trainBackU {
+    position station.map 0 4
+    text 6
+    image train_l.bmp
+    route rrrrrrrrrrrrrrrwwwwwwwwrrrrrrrrrrrrrrrruuuullllllllllllllllllllllllllllllldddd
+    condition :none: {
+      changeText trainBackU 6
+    }
+  }
+  trainFrontL {
+    position station.map 2 15
+    text 6
+    image train_l.bmp
+    route rrrrrrrrrrrrrrrrrrrrrrrrrrrrruuuullllllllllllllllwwwwwwwwlllllllllllllllddddrr
+    condition :none: {
+      changeText trainFrontL 6
+    }
+  }
+  trainMiddleL {
+    position station.map 1 15
+    text 6
+    image train_m.bmp
+    route rrrrrrrrrrrrrrrrrrrrrrrrrrrrrruuuulllllllllllllllwwwwwwwwllllllllllllllllddddr
+    condition :none: {
+      changeText trainMiddleL 6
+    }
+  }
+  trainBackL {
+    position station.map 0 15
+    text 6
+    image train_r.bmp
+    route rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrruuuullllllllllllllwwwwwwwwllllllllllllllllldddd
+    condition :none: {
+      changeText trainBackL 6
+    }
+  }
+  tickets {
+    position station.map 9 8
+    text 4
+    image tickets.bmp
+    route w
+    condition :none: {
+      changeText papierkorb 5
+    }
+  }
+  schaffner1 {
+    position station.map 16 5
+    text 6
+    image invisible_bot.bmp
+    route w
+    condition ticket {
+      changeState schaffner1 0
+      changeState schaffner2 0
+      changeText papierkorb 7
+    }
+  }
+  schaffner2 {
+    position station.map 16 10
+    text 6
+    image invisible_bot.bmp
+    route w
+    condition ticket {
+      changeState schaffner2 0
+      changeState schaffner1 0
+      changeText papierkorb 7
+    }
+  }
+  papierkorb {
+    position station.map 23 7
+    text 5
+    image bin.bmp
+    route w
+    condition :none: {
+      changeState ticket 2
+      changeText schaffner1 3
+      changeText schaffner2 3
+    }
+  }
+  ticket {
+  }
+  fischer_gelb {
+    position hafen_list.map 38 32
+    text 8
+    image player4.bmp
+    route lllllllluuuuurddddrrrrrrrd
+    condition geld01 {
+      changeState geld01 0
+      changeText self 10
+    }
+  }
+  fischer_gelb2 {
+    position hafen_list.map 5 12
+    text 9
+    image player4.bmp
+    route rrrwwrdddlllwldddrwrwrrddwdlllwluuwuuuwwuuuuww
+    condition geld01 {
+      changeState geld01 0
+    }
+  }
+  info_schild {
+    position hafen_list.map 6 7
+    text 0
+    image invisible_bot.bmp
+    route w
+    condition :none: {
+    }
+  }
+  geld01 {
+    position hafen_list.map 16 7
+    text 1
+    image invisible_bot.bmp
+    route w
+    condition :none: {
+      changeState geld01 2
+      changeText fischer_gelb 2
+    }
+  }
+}

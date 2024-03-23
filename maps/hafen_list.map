@@ -1,0 +1,180 @@
+"Hafen List" 65 55
+images {
+  image ground.bmp 0 0 bg_grass
+  image ground.bmp 1 0 bg_brown
+  image ground.bmp 2 0 bg_stone
+  image ground.bmp 3 0 bg_water
+  image ground.bmp 4 0 bg_quay_wall
+  image ground.bmp 5 0 bg_red_stone
+  image ground.bmp 6 0 bg_floor_wood
+  image ground.bmp 7 0 bg_pile_wood
+  image ground.bmp 8 0 bg_boulder_left
+  image ground.bmp 9 0 bg_boulder_top
+  image ground.bmp 10 0 bg_boulder_topleft
+  image ground.bmp 11 0 bg_boulder_topright
+  image ground.bmp 12 0 bg_boulder_right
+  image ground.bmp 13 0 bg_boulder_downright_inner
+  image objects.bmp 0 0 grass
+  image objects.bmp 3 0 flower
+  image objects.bmp 1 0 corn
+  image objects.bmp 2 0 fence
+  image object_tree.bmp 0 0 tree_u
+  image object_tree.bmp 0 1 tree_l
+  image object_boat.bmp 0 0 boat_00
+  image object_boat.bmp 1 0 boat_01
+  image object_boat.bmp 0 1 boat_10
+  image object_boat.bmp 1 1 boat_11
+  image object_boat.bmp 2 1 boat_12
+  image object_boat.bmp 3 1 boat_13
+  image object_boat.bmp 0 2 boat_20
+  image object_boat.bmp 1 2 boat_21
+  image object_boat.bmp 2 2 boat_22
+  image object_boat.bmp 3 2 boat_23
+  image object_ton.bmp 0 0 ton_yellow_top
+  image object_ton.bmp 0 1 ton_yellow_bottom
+  image object_house2.bmp 1 2 house_door1
+  image object_house2.bmp 2 2 house_door2
+  image object_house2.bmp 1 1 house_win1
+  image object_house2.bmp 2 1 house_win2
+  image object_house2.bmp 0 2 house_left
+  image object_house2.bmp 3 2 house_right
+  image object_house2.bmp 0 0 house_roof_left
+  image object_house2.bmp 3 0 house_roof_right
+  image object_house2.bmp 1 0 house_roof
+  image object_info.bmp 0 0 info_sign_u
+  image object_info.bmp 0 1 info_sign_l
+}
+background {
+  region bg_water 41 5 11 8 1
+  region bg_water 4 0 61 5 1
+  region bg_water 58 5 7 40 1
+  region bg_water 10 13 42 32 1
+  region bg_stone 10 6 31 6 0
+  region bg_quay_wall 10 12 31 1 1
+  region bg_stone 5 6 5 39 0
+  region bg_boulder_topleft 4 5 1 1 1
+  region bg_boulder_top 5 5 36 1 1
+  region bg_floor_wood 30 22 2 9 0
+  region ton_yellow_bottom 15 8 5 1 1
+  region ton_yellow_bottom 31 24 1 2 1
+  region info_sign_l 6 7 1 1 1
+  region bg_floor_wood 30 31 22 2 0
+  region bg_pile_wood 30 33 22 1 1
+  region bg_stone 52 6 5 39 0
+  region bg_boulder_right 57 6 1 38 1
+  region bg_boulder_top 52 5 5 1 1
+  region bg_boulder_topright 57 5 1 1 1
+  region bg_stone 5 45 52 4 0
+  region bg_water 0 0 4 55 1
+  region bg_boulder_left 4 6 1 49 1
+  region bg_grass 5 49 52 6 1
+  region bg_grass 57 49 8 6 1
+  region bg_grass 57 45 8 4 1
+  region fence 57 45 1 5 1
+  region fence 5 49 52 1 1
+  region bg_boulder_top 58 44 7 1 1
+  region flower 15 50 1 1 0
+  region flower 18 50 1 1 0
+  region flower 21 50 1 1 0
+  region flower 16 51 1 1 0
+  region flower 17 52 1 1 0
+  region flower 19 51 1 1 0
+  region flower 20 52 1 1 0
+  region flower 22 51 1 1 0
+  region flower 23 52 1 1 0
+  region flower 24 50 1 1 0
+  region flower 25 51 1 1 0
+  region flower 26 52 1 1 0
+  region flower 27 50 1 1 0
+  region flower 28 51 1 1 0
+  region flower 29 52 1 1 0
+  region flower 30 50 1 1 0
+  region flower 31 51 1 1 0
+  region flower 32 52 1 1 0
+  region flower 33 50 1 1 0
+  region flower 34 51 1 1 0
+  region flower 35 52 1 1 0
+  region flower 36 50 1 1 0
+  region flower 37 51 1 1 0
+  region flower 38 52 1 1 0
+  region flower 39 50 1 1 0
+  region flower 40 51 1 1 0
+  region flower 41 52 1 1 0
+  region flower 42 50 1 1 0
+  region flower 43 51 1 1 0
+  region flower 44 52 1 1 0
+  region flower 45 50 1 1 0
+  region flower 46 51 1 1 0
+  region flower 47 52 1 1 0
+  region flower 48 50 1 1 0
+  region flower 49 51 1 1 0
+  region flower 50 52 1 1 0
+  region flower 51 50 1 1 0
+  region flower 52 51 1 1 0
+  region flower 53 52 1 1 0
+  region flower 54 50 1 1 0
+  region flower 55 51 1 1 0
+  region flower 56 52 1 1 0
+  region flower 57 50 1 1 0
+  region flower 58 51 1 1 0
+  region flower 59 52 1 1 0
+  region flower 58 48 1 1 0
+  region flower 59 49 1 1 0
+  region flower 60 50 1 1 0
+  region flower 58 45 1 1 0
+  region flower 59 46 1 1 0
+  region flower 60 47 1 1 0
+  region flower 6 50 1 1 0
+  region flower 7 51 1 1 0
+  region flower 8 52 1 1 0
+  region flower 9 50 1 1 0
+  region flower 10 51 1 1 0
+  region flower 11 52 1 1 0
+  region flower 12 50 1 1 0
+  region flower 13 51 1 1 0
+  region flower 14 52 1 1 0
+  region ton_yellow_bottom 5 30 1 1 1
+  region ton_yellow_bottom 5 36 1 1 1
+  region ton_yellow_bottom 56 38 1 1 1
+  region bg_boulder_downright_inner 57 44 1 1 1
+}
+foreground {
+  region boat_20 13 13 1 1
+  region boat_21 14 13 1 1
+  region boat_22 15 13 1 1
+  region boat_23 16 13 1 1
+  region boat_10 13 12 1 1
+  region boat_11 14 12 1 1
+  region boat_12 15 12 1 1
+  region boat_13 16 12 1 1
+  region boat_00 13 11 1 1
+  region boat_01 14 11 1 1
+  region boat_20 23 13 1 1
+  region boat_21 24 13 1 1
+  region boat_22 25 13 1 1
+  region boat_23 26 13 1 1
+  region boat_10 23 12 1 1
+  region boat_11 24 12 1 1
+  region boat_12 25 12 1 1
+  region boat_13 26 12 1 1
+  region boat_00 23 11 1 1
+  region boat_01 24 11 1 1
+  region boat_20 33 33 1 1
+  region boat_21 34 33 1 1
+  region boat_22 35 33 1 1
+  region boat_23 36 33 1 1
+  region boat_10 33 32 1 1
+  region boat_11 34 32 1 1
+  region boat_12 35 32 1 1
+  region boat_13 36 32 1 1
+  region boat_00 33 31 1 1
+  region boat_01 34 31 1 1
+  region ton_yellow_top 15 7 5 1
+  region ton_yellow_top 31 23 1 2
+  region info_sign_u 6 6 1 1
+  region ton_yellow_top 5 35 1 1
+  region ton_yellow_top 5 29 1 1
+  region ton_yellow_top 56 37 1 1
+}
+gates {
+}

@@ -1,0 +1,35 @@
+"Simple Map" 32 32
+images {
+  image ground.bmp 0 0 bg_grass
+  image ground.bmp 1 0  bg_brown
+  image ground.bmp 3 0  bg_water
+  image objects.bmp 0 0 grass
+  image objects.bmp 3 0 flower
+  image objects.bmp 1 0 corn
+  image objects.bmp 2 0 fence
+  image object_tree.bmp 0 0 tree_u
+  image object_tree.bmp 0 1 tree_l
+}
+background {
+  region bg_water  0  0 32 32 1
+  region bg_brown  6  6 20 10 0
+  region bg_grass  7  7 18  8 0
+  region bg_brown  9 16 16  4 0
+  region bg_grass 10 15 14  4 0
+  region grass    12 10  8  4 0
+  region fence    11 14  4  1 1
+  region fence    17 14  5  1 1
+  region fence    11 10  1  4 1
+  region tree_l   12  9  5  1 1
+  region tree_l   21 10  1  4 1
+}
+foreground {
+  region tree_u   12  8  5  1
+  region tree_u   21  9  1  4
+  region fence    12 12  1  1
+}
+gates {
+  gate 12 12 station.map 8 7
+}
+bots {
+}
